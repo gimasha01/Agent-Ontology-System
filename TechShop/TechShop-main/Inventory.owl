@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/inventory"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/inventory">
+    <Prefix name="" IRI="http://example.org/inventory/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FetchAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InventoryAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrderAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrderProcessAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PickerBotAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UpdateAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fetches"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#processes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#updates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasQuantity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotalAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isAvailable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FetchAction1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InventoryAgent1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Order1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OrderAgent1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OrderProcessAction1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PickerBotAgent1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Printer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SmartPhone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SmartWatch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tablet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UpdateAction1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#FetchAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InventoryAgent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrderAgent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrderProcessAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PickerBotAgent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UpdateAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#FetchAction"/>
+        <NamedIndividual IRI="#FetchAction1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InventoryAgent"/>
+        <NamedIndividual IRI="#InventoryAgent1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#Laptop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Order"/>
+        <NamedIndividual IRI="#Order1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrderAgent"/>
+        <NamedIndividual IRI="#OrderAgent1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrderProcessAction"/>
+        <NamedIndividual IRI="#OrderProcessAction1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PickerBotAgent"/>
+        <NamedIndividual IRI="#PickerBotAgent1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#Printer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#SmartPhone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#SmartWatch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Item"/>
+        <NamedIndividual IRI="#Tablet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UpdateAction"/>
+        <NamedIndividual IRI="#UpdateAction1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manages"/>
+        <NamedIndividual IRI="#InventoryAgent1"/>
+        <NamedIndividual IRI="#Laptop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manages"/>
+        <NamedIndividual IRI="#InventoryAgent1"/>
+        <NamedIndividual IRI="#Printer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manages"/>
+        <NamedIndividual IRI="#InventoryAgent1"/>
+        <NamedIndividual IRI="#SmartPhone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manages"/>
+        <NamedIndividual IRI="#InventoryAgent1"/>
+        <NamedIndividual IRI="#SmartWatch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#manages"/>
+        <NamedIndividual IRI="#InventoryAgent1"/>
+        <NamedIndividual IRI="#Tablet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#performs"/>
+        <NamedIndividual IRI="#InventoryAgent1"/>
+        <NamedIndividual IRI="#UpdateAction1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#performs"/>
+        <NamedIndividual IRI="#OrderAgent1"/>
+        <NamedIndividual IRI="#OrderProcessAction1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#processes"/>
+        <NamedIndividual IRI="#OrderAgent1"/>
+        <NamedIndividual IRI="#Order1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fetches"/>
+        <NamedIndividual IRI="#PickerBotAgent1"/>
+        <NamedIndividual IRI="#Laptop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fetches"/>
+        <NamedIndividual IRI="#PickerBotAgent1"/>
+        <NamedIndividual IRI="#Printer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fetches"/>
+        <NamedIndividual IRI="#PickerBotAgent1"/>
+        <NamedIndividual IRI="#SmartPhone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fetches"/>
+        <NamedIndividual IRI="#PickerBotAgent1"/>
+        <NamedIndividual IRI="#SmartWatch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fetches"/>
+        <NamedIndividual IRI="#PickerBotAgent1"/>
+        <NamedIndividual IRI="#Tablet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#performs"/>
+        <NamedIndividual IRI="#PickerBotAgent1"/>
+        <NamedIndividual IRI="#FetchAction1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Laptop"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">100000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuantity"/>
+        <NamedIndividual IRI="#Laptop"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAvailable"/>
+        <NamedIndividual IRI="#Laptop"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStatus"/>
+        <NamedIndividual IRI="#Order1"/>
+        <Literal>Pending</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTotalAmount"/>
+        <NamedIndividual IRI="#Order1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Printer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuantity"/>
+        <NamedIndividual IRI="#Printer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAvailable"/>
+        <NamedIndividual IRI="#Printer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#SmartPhone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">75000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuantity"/>
+        <NamedIndividual IRI="#SmartPhone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAvailable"/>
+        <NamedIndividual IRI="#SmartPhone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#SmartWatch"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuantity"/>
+        <NamedIndividual IRI="#SmartWatch"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAvailable"/>
+        <NamedIndividual IRI="#SmartWatch"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#Tablet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">90000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasQuantity"/>
+        <NamedIndividual IRI="#Tablet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isAvailable"/>
+        <NamedIndividual IRI="#Tablet"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#fetches"/>
+        <Class IRI="#PickerBotAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="#InventoryAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performs"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#processes"/>
+        <Class IRI="#OrderAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#updates"/>
+        <Class IRI="#InventoryAgent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#fetches"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performs"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#processes"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#updates"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasStatus"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasPrice"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasQuantity"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasStatus"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasTotalAmount"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isAvailable"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPrice"/>
+        <Class IRI="#Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasQuantity"/>
+        <Class IRI="#Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStatus"/>
+        <Class IRI="#Order"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTotalAmount"/>
+        <Class IRI="#Order"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isAvailable"/>
+        <Class IRI="#Item"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPrice"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasQuantity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTotalAmount"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isAvailable"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
